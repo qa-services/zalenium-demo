@@ -12,7 +12,6 @@ namespace ZaleniumDemo.Tests
         [Test]
         public void SingleCheckboxTest()
         {
-            var message = Faker.Company.BS();
             new CheckboxPage(Driver)
                 .CheckAge()
                 .AssertCheckboxMessageIsShown("Success - Check box is checked");

@@ -1,6 +1,5 @@
-using System.Threading;
 using NUnit.Framework;
-using OpenQA.Selenium;
+using System.Threading;
 using ZaleniumDemo.Pages;
 
 namespace ZaleniumDemo.Tests
@@ -13,7 +12,6 @@ namespace ZaleniumDemo.Tests
         [Test]
         public void MultipleCheckboxTest2()
         {
-            var message = Faker.Company.BS();
             new CheckboxPage(Driver)
                 .CheckAll()
                 .UncheckOneCheckbox()

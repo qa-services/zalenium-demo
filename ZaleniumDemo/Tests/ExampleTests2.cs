@@ -12,7 +12,6 @@ namespace ZaleniumDemo.Tests
         [Test]
         public void SingleTwoInputsTest()
         {
-            var message = Faker.Company.BS();
             new SimpleFormPage(Driver)
                 .TypeSum1("5")
                 .TypeSum2("6")

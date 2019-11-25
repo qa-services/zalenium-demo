@@ -12,7 +12,6 @@ namespace ZaleniumDemo.Tests
         [Test]
         public void MultipleCheckboxTest()
         {
-            var message = Faker.Company.BS();
             new CheckboxPage(Driver)
                 .CheckAll()
                 .AssertAllCheckboxesAreChecked()

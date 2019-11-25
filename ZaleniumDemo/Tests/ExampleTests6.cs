@@ -1,7 +1,6 @@
+using NUnit.Framework;
 using System;
 using System.Threading;
-using NUnit.Framework;
-using OpenQA.Selenium;
 using ZaleniumDemo.Pages;
 
 namespace ZaleniumDemo.Tests
