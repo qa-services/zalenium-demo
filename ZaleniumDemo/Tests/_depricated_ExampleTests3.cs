@@ -1,6 +1,6 @@
-using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using System.Threading;
 
 namespace ZaleniumDemo.Tests
 {
@@ -10,7 +10,7 @@ namespace ZaleniumDemo.Tests
     {
 
         [Test]
-        public void NavigateToAdminPage()
+        public void _dep_NavigateToAdminPage()
         {
             Driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
             Driver.FindElement(By.LinkText("Admin Page")).Click();

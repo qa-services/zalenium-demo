@@ -1,6 +1,5 @@
-using System.Threading;
 using NUnit.Framework;
-using OpenQA.Selenium;
+using System.Threading;
 using ZaleniumDemo.Pages;
 
 namespace ZaleniumDemo.Tests
@@ -11,7 +10,7 @@ namespace ZaleniumDemo.Tests
     {
 
         [Test]
-        public void LoginTestNegative()
+        public void _dep_LoginTestNegative()
         {
             new LoginPage(Driver)
                 .LoginWithFailure("", "")

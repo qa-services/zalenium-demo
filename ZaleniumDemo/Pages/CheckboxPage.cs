@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ZaleniumDemo.Pages
 {
-    class CheckboxPage : BasePage
+    public class CheckboxPage : BasePage
     {
         public override string Url => "https://www.seleniumeasy.com/test/basic-checkbox-demo.html";
 

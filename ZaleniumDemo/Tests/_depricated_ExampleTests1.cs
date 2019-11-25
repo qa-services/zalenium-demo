@@ -1,6 +1,5 @@
-using System.Threading;
 using NUnit.Framework;
-using OpenQA.Selenium;
+using System.Threading;
 using ZaleniumDemo.Pages;
 
 namespace ZaleniumDemo.Tests
@@ -10,7 +9,7 @@ namespace ZaleniumDemo.Tests
     public class _depricated_ExampleTests1 : BaseTest
     {
         [Test]
-        public void LoginTest()
+        public void _dep_LoginTest()
         {
             new LoginPage(Driver)
                 .Login("zalenium_demo", "P@ssword")
@@ -20,7 +19,7 @@ namespace ZaleniumDemo.Tests
         }
 
         [Test]
-        public void RegisterTest()
+        public void _dep_RegisterTest()
         {
             new LoginPage(Driver)
                 .GoToRegisterPage()

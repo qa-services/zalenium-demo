@@ -2,3 +2,4 @@
 /ZaleniumDemo/bin
 /ZaleniumDemo/obj
 *.user
+*TestResult*.xml

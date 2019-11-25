@@ -3,13 +3,12 @@ using OpenQA.Selenium;
 
 namespace ZaleniumDemo.Pages
 {
-    public class LoginPage
+    public class LoginPage : BasePage
     {
-        protected IWebDriver Driver;
+        public override string Url => "https://parabank.parasoft.com/parabank/login.htm";
 
-        public LoginPage(IWebDriver driver)
+        public LoginPage(IWebDriver driver) : base(driver)
         {
-            Driver = driver;
         }
 
         private IWebElement TxtUserName => Driver.FindElement(By.CssSelector("input[name=username]"));
