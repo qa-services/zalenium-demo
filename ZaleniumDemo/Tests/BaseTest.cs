@@ -3,6 +3,7 @@ using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
 
 namespace ZaleniumDemo.Tests
@@ -18,7 +19,7 @@ namespace ZaleniumDemo.Tests
             options.AddAdditionalCapability("zal:name", TestContext.CurrentContext.Test.MethodName, true);
             options.AddAdditionalCapability("zal:build", $"Test run on {DateTime.Now:f}", true);
             options.AddAdditionalCapability("zal:screenResolution", "1920x1080", true);
-            options.AddAdditionalCapability("zal:recordVideo", "true", true);
+            options.AddAdditionalCapability("zal:recordVideo", true, true);
             Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), options);
             Driver.Manage().Window.Maximize();
             Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);

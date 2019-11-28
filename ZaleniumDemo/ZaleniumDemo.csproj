@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Tests\_depricated_ExampleTests1.cs" />
+    <Compile Remove="Tests\_depricated_ExampleTests2.cs" />
+    <Compile Remove="Tests\_depricated_ExampleTests3.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Faker.Net" Version="1.1.1" />
     <PackageReference Include="FluentAssertions" Version="5.9.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />
